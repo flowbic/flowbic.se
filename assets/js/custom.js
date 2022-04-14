@@ -1868,7 +1868,7 @@ function initMap() {
   if (map_id === null) return;
   // Styles a map in night mode.
   if (map_scropt_id === null) {
-    var GOOGLE_MAP_KEY = "AIzaSyDLY-G8eE0y0A76Bedx8hYp9iCfWb4RKYc";
+    var GOOGLE_MAP_KEY = process.env.MAPS_KEY;
 
     var script = document.createElement("script");
     script.type = "text/javascript";
